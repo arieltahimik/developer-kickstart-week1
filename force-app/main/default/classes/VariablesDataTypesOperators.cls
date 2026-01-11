@@ -216,7 +216,7 @@ public with sharing class VariablesDataTypesOperators {
         if (minutes == null) {
             return 0;
         }
-        
+
         final Integer MILLISECONDS_PER_MINUTE = 60000; // Make this value a constant
         Integer milliseconds = minutes * MILLISECONDS_PER_MINUTE;
         return milliseconds;
@@ -233,7 +233,7 @@ public with sharing class VariablesDataTypesOperators {
      * @return The average of the three numbers.
      */
     public static Double averageOfThreeNumbers(Integer a, Integer b, Integer c) {
-        return null; // Replace null with the variable you used to store the result
+        return (a + b + c) / 3;
     }
 
     /**
