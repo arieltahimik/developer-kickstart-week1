@@ -119,7 +119,17 @@ public with sharing class VariablesDataTypesOperators {
      * @return true if the number is positive, false otherwise.
      */
     public static Boolean isPositive(Integer num) {
-        return null; // Replace null with the variable you used to store the result
+        if (num == null) {
+            return null;
+        }
+
+        if (num > 0) {
+            return true;
+        } else {
+            return false;
+        }
+
+        // return (num > 0) ? true : false;
     }
 
     /**
