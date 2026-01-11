@@ -141,7 +141,13 @@ public with sharing class VariablesDataTypesOperators {
      * @return The concatenated string.
      */
     public static String concatenateStrings(String str1, String str2) {
-        return null; // Replace null with the variable you used to store the result
+        if (str1 == null) {
+            str1 = '';
+        } else if (str2 == null) {
+            str2 = '';
+        }
+
+        return str1 + str2;        
     }
 
 	/**
